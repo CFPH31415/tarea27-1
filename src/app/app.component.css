@@ -1,0 +1,22 @@
+form {
+    width: 500px;
+    margin: 0 auto; 
+  }
+  
+  label {
+    font-size: 18px;
+  }
+  
+  input[type="number"] {
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  

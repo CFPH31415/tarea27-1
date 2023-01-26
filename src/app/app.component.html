@@ -1,0 +1,14 @@
+<form>
+  <label>Valor 1: <input type="number" [(ngModel)]="valor1" name="valor1"></label>
+  <br>
+  <label>Valor 2: <input type="number" [(ngModel)]="valor2" name="valor2"></label>
+  <br>
+  <br>
+  <button (click)="operacion('suma')">Suma</button>
+  <button (click)="operacion('resta')">Resta</button>
+  <button (click)="operacion('multiplicacion')">Multiplicación</button>
+  <button (click)="operacion('division')">División</button>
+  <br>
+  <br>
+  <label>Resultado: {{resultado}}</label>
+</form>
