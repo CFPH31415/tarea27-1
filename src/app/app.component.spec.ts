@@ -18,6 +18,12 @@ describe('AppComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
+      it('should render title', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('proyecto27-1');
+  });
   it('should calculate result correctly for sum operation', () => {
     component.valor1 = 5;
     component.valor2 = 7;
