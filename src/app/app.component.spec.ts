@@ -18,7 +18,7 @@ describe('AppComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-    it('should create the app', () => {
+  it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
@@ -36,8 +36,7 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('proyecto27-1');
   });
-
-  });
+  
   it('should calculate result correctly for sum operation', () => {
     component.valor1 = 5;
     component.valor2 = 7;
