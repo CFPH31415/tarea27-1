@@ -18,11 +18,25 @@ describe('AppComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-      it('should render title', () => {
+    it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it(`should have as title 'proyecto27-1'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('proyecto27-1');
+  });
+
+  it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('proyecto27-1');
+  });
+
   });
   it('should calculate result correctly for sum operation', () => {
     component.valor1 = 5;
